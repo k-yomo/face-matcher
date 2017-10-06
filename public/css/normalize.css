@@ -421,3 +421,15 @@ td,
 th {
   padding: 0;
 }
+
+.face-image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.detected-image {
+  display: block;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}

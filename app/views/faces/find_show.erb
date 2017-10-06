@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h3>Your Ideal Face</h3>
+      <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= current_user.ideal_image %>" width="400">
+      <h3>similarity with the other users</h3>
+      <% @similarities.each do |similarity| %>
+      <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= User.find(similarity[:user_id]).self_image %>" width="400">
+        <%= similarity[:similarity].round(2) %>%
+      <% end %>
+    </div>
+  </div>
+</div>

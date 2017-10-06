@@ -1,0 +1,13 @@
+<main class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-4">
+    <h2>Profile</h2>
+
+    <h3>Your face image</h3>
+    <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= @user.self_image %>" width="400">
+  </div>
+  <div class="col-md-4">
+    <h3>Your ideal face image</h3>
+    <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= @user.ideal_image %>" width="400">
+  </div>
+</main>

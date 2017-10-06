@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <h2>Recognized Emotion</h2>
+    <img src="http://itp.nyu.edu/~rsm347/sinatra/file_upload/public/<%= @filename %>" class="detected-image">
+    
+    <table class="table">
+      <tbody>
+        <% @detected_emotions.each do |emotion| %>
+          <tr>
+            <th><%= emotion.type %></th> <td><%= emotion.confidence.to_i.to_s %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

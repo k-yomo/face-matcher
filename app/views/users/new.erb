@@ -1,6 +1,5 @@
-<h1>Upload Image</h1>
+<h2>Sign up</h2>
 <form action="/users" method="post" enctype="multipart/form-data">
-
   <div class="">
     <label for="first_name">First Name</label>
     <input type="text" name="user[first_name]" id="first_name">
@@ -21,5 +20,14 @@
     <input type="password" name="user[password]">
   </div>
 
-  <input type="submit" value="Upload">
+  <div class="form-group">
+      <label for="self-face">Your Face</label>
+      <input type="file" name="face1" id="self-face" class="form-control-file">
+  </div>
+
+  <div class="form-group">
+      <label for="ideal-face">Your Ideal Face</label>
+      <input type="file" name="face2" id="ideal-face" class="form-control-file">
+  </div>
+  <input type="submit" value="Submit">
 </form>

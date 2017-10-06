@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h3>Your ideal face image</h3>
+      <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= @ideal_image %>" width="400">
+      <form action="/faces/find" method="post">
+        <button type="submit" name="button" class="btn btn-secondary">Find similar faces</button>
+      </form>
+    </div>
+  </div>
+</div>
