@@ -1,7 +1,20 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $('#result-table').find('tr').hide();
+  $('#result-table').find('tr').first().show();
+  $('#result-table').find('tr').first().next().addClass('active');
+  $('#result-table').find('tr').first().next().show();
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  nextButtonLister();
 });
+
+var nextButtonLister = function() {
+  $('#next-face').on('click', function(e) {
+    e.preventDefault();
+    var activeRow = $('.active');
+    activeRow.hide();
+    activeRow.removeClass('active');
+    
+    activeRow.next().addClass('active');
+    activeRow.next().show();
+  })
+};

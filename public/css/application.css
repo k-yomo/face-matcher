@@ -1,1 +1,29 @@
+.content_wrapper {
+  margin: 30px;
+}
 
+
+.ideal-image {
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.matched_image {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.next-btn {
+  border: none;
+  border-radius: 500px;
+  background: #212529;
+  color: white;
+  width: 200px;
+  height: 200px;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.image-in-index {
+  width: 100%;
+}

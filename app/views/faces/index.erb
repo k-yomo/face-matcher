@@ -1,10 +1,14 @@
 
-<h2>All registerd faces</h2>
+<h2>All registerd users</h2>
 <main class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <% @faces.each do |face_image| %>
-      <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= face_image %>">
-    <% end %>
+    <div class="row">
+      <% @faces.each do |face_image| %>
+      <div class="col-md-3">
+        <img src="https://face-matcher-bucket.s3.amazonaws.com/<%= face_image %>"  class="image-in-index">
+      </div>
+      <% end %>
+    </div>
   </div>
 </main>

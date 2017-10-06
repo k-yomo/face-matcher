@@ -41,7 +41,6 @@ class Face < ActiveRecord::Base
     s3 = Aws::S3::Resource.new(region:'us-east-1')
     obj = s3.bucket('face-matcher-bucket').object(File.basename(image))
     obj.upload_file(image)
-    p "*" * 100
-    p obj.public_url.split("amazonaws.com/")[1]
+    obj.public_url.split("amazonaws.com/")[1]
   end
 end

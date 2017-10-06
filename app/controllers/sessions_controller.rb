@@ -12,3 +12,8 @@ post '/login' do
     erb :'/login'
   end
 end
+
+get '/logout' do
+  logout
+  redirect "/"
+end
